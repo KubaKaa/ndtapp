@@ -1,0 +1,196 @@
+/*------------------------------------------------------------------------------
+                            Ekran Startowy
+------------------------------------------------------------------------------*/
+
+*{
+
+}
+
+body{
+  font-size: 28px;
+  font-family: Verdana;
+  background: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.container{
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #0872c9;
+  border-radius: 5px;
+  position: relative;
+
+}
+
+.logo:before {
+  content: "NDT webApp";
+  color: white;
+  font-family: Verdana;
+}
+
+.logo{
+  position: absolute;
+  top: 40px;
+}
+
+.slider{
+  position: absolute;
+  top: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider img{
+  width: 97%;
+  height: auto;
+}
+
+a > #startbutton{
+  outline: none;
+  border-style: none;
+  width: auto;
+  font-size: 45px;
+  color: #0872c9;
+  border-radius: 10px;
+  background: white;
+  position: absolute;
+  left: 100px;
+  bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 1px solid #444;
+}
+
+a > #startbutton:hover{
+  border: 1px solid white;
+  background: #0872c9;
+  color: white;
+}
+
+
+.oblicz{
+  width: 150px;
+  margin: 5px;
+  font-size: 22px;
+  outline: none;
+  color: #0872c9;
+  border-style: none;
+  border: 1px solid #444;
+  border-radius: 5px;
+  margin-top: 25px;
+}
+.oblicz:hover{
+  border: 1px solid white;
+  background: #0872c9;
+  color: white;
+}
+
+/*------------------------------------------------------------------------------
+                                    MENU
+------------------------------------------------------------------------------*/
+
+.nav{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.nav_but{
+  width: 150px;
+  height: 40px;
+  margin: 5px;
+  font-size: 22px;
+  outline: none;
+  color: #0872c9;
+  border-style: none;
+  border: 1px solid #444;
+  border-radius: 5px;
+}
+.nav_but:hover{
+  border: 1px solid white;
+  background: #0872c9;
+  color: white;
+}
+
+/*------------------------------------------------------------------------------
+                                    Przesuniecie
+------------------------------------------------------------------------------*/
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #0650a7;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #0650a7;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #0650a7;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #0650a7;
+}
+
+.enter_value{
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.enter_value input[type="number"]{
+  font-size: 30px;
+  outline: none;
+  color: white;
+  background: none;
+  text-align: center;
+  padding: 4px;
+  border-style: none;
+  border-radius: 8px;
+  border-bottom: 2px solid #0761b8;
+  margin-top: 15px;
+}
+
+.wynik{
+  color: white;
+  margin-top: 20px;
+}
+
+/*------------------------------------------------------------------------------
+                                    ilość_ekspozycji
+------------------------------------------------------------------------------*/
+
+.klasa_badania{
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+select{
+  background: #0761b8;
+  color: white;
+  font-family: verdana;
+  text-align: center;
+  border-style: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 4px;
+  font-size: 20px;
+}
+
+.value_gru_sre{
+  margin-top: 50px;
+}
+
+.wybor_zrodlo{
+  margin-top: 30px;
+}
