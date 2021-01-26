@@ -14,7 +14,7 @@
 
                   <!-- KLASA BADANIA -->
         <div class="klasa_badania" style="position: absolute; top: 110px;">
-          <select class="wybor_klasa_badania">
+          <select id="choiceClassExam">
             <option value="">Wybierz Klasę Badania</option>
             <option value="a">Klasa A</option>
             <option value="b">Klasa B</option>
@@ -30,19 +30,20 @@
           <div class=""></div>
         </div>
                     <!-- WYBIERZ ŹRÓDŁO -->
-        <div class="wybor_zrodlo">
-          <select>
+        <div>
+          <select id="choiceSource">
             <option value="">Wybierz Źródło</option>
             <option value="I">Izotop</option>
             <option value="L">Lampa</option>
           </select>
         </div>
 
-        <input type="submit" class="oblicz" value="Oblicz">
+        <input type="submit" id="Oblicz" value="Oblicz" onclick="xik()">
+        <div id="matchAmountExp"></div>
 
 
       </div>
     </div>
-
+    <script src="./script.js"></script>
   </body>
 </html>
