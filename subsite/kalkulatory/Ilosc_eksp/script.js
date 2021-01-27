@@ -11,15 +11,18 @@ var de = document.getElementById("de").value;
 var t = document.getElementById("t").value;
 var sfd;
 var y;
-var k = de / sfd;
-
-var x = t / de;
+// usunąłem  
+//  k = de / sfd;
+//  x = t / de;
+var k;
+var x;
 
 //Event aktualizujący info
 window.addEventListener('keyup', ()=>{
   de = document.getElementById("de").value;
   t = document.getElementById("t").value
   k = de / sfd;
+  x = t / de;
 });
 
 
@@ -83,7 +86,6 @@ function xik(){
                     // };
                     console.log(wyniki[i])
                 }
-
                 console.log(`nasze k ${k}`);
              };
         
@@ -132,9 +134,9 @@ function xik(){
 
 
     // console.log(`Liczba ekspozycji ${wyniki.indexOf(closest) + 2}`);
-    // console.log(`to ilość ekspozycji ${bestMatch.indexOf(Math.min(...bestMatch.filter(x => x > 0)))+2}`);
+    console.log(`to ilość ekspozycji ${bestMatch.indexOf(Math.min(...bestMatch.filter(x => x > 0)))+2}`);
     divMatch.innerHTML = bestMatch.indexOf(Math.min(...bestMatch.filter(x => x > 0)))+2;
-    // console.log(sfd);
+    console.log(sfd);
 
 };
 
