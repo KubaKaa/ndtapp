@@ -6,25 +6,35 @@ sfdDiv = document.getElementById("match_sfd");
 
 
 divMatch = document.getElementById("matchAmountExp");
-let de = document.getElementById("de").value;
-let t = document.getElementById("t").value;
-let sfd;
-let y;
-let k = de / sfd;
+//Zamiana let na var--------------------------------------------------------------------------------!
+var de = document.getElementById("de").value;
+var t = document.getElementById("t").value;
+var sfd;
+var y;
+var k = de / sfd;
 
-let x = t / de;
+var x = t / de;
+
+//Event aktualizujący info
+window.addEventListener('keyup', ()=>{
+  de = document.getElementById("de").value;
+  t = document.getElementById("t").value
+  k = de / sfd;
+});
 
 
 const selectSource = document.getElementById('choiceSource');
 selectSource.addEventListener('change', function(){
     if (document.getElementById('choiceSource').value=="I"){
-        let sfd = 10;
+        //usunięcie let przed sfd---------------------------------------------------------------------------------!
+        sfd = 10;
         console.log(sfd)
     } else if (document.getElementById('choiceSource').value=="L"){
-        let sfd = 120;
+        sfd = 120;
         console.log(sfd)
     };
-
+    //definicja k żeby pokazywała numer, możesz to też dodać w funkcji xik na samym dole---------------------------------------------------------------------------------!
+k = de/sfd;
 }, false);
 document.getElementById('Oblicz').addEventListener(onclick, console.log(sfd), false);
 
