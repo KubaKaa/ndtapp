@@ -194,3 +194,8 @@ select{
 .wybor_zrodlo{
   margin-top: 30px;
 }
+
+#matchAmountExp #matchSection{
+  color: white;
+  margin: 5px;
+}

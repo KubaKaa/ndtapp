@@ -6,6 +6,7 @@ sfdDiv = document.getElementById("match_sfd");
 
 
 divMatch = document.getElementById("matchAmountExp");
+divMatchSection = document.getElementById("matchSection");
 //Zamiana let na var--------------------------------------------------------------------------------!
 var de = document.getElementById("de").value;
 var t = document.getElementById("t").value;
@@ -30,10 +31,10 @@ const selectSource = document.getElementById('choiceSource');
 selectSource.addEventListener('change', function(){
     if (document.getElementById('choiceSource').value=="I"){
         //usunięcie let przed sfd---------------------------------------------------------------------------------!
-        sfd = 10;
+        sfd = parseFloat(10) + parseFloat(de);
         console.log(sfd)
     } else if (document.getElementById('choiceSource').value=="L"){
-        sfd = 120;
+        sfd = parseFloat(120) + parseFloat(de);
         console.log(sfd)
     };
     //definicja k żeby pokazywała numer, możesz to też dodać w funkcji xik na samym dole---------------------------------------------------------------------------------!
@@ -137,6 +138,9 @@ function xik(){
     console.log(`to ilość ekspozycji ${bestMatch.indexOf(Math.min(...bestMatch.filter(x => x > 0)))+2}`);
     divMatch.innerHTML = bestMatch.indexOf(Math.min(...bestMatch.filter(x => x > 0)))+2;
     console.log(sfd);
+    // Obliczenie odcinka
+    divMatchSection.innerHTML = `Odcinek = ${de * 3.14 / bestMatch.indexOf(Math.min(...bestMatch.filter(x => x > 0)))+2}`;
+    
 
 };
 
